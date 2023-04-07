@@ -9,11 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.14",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
+    "postcss": "^8.4.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
+    "react-scripts": "^5.0.1",
     "sort-by": "^1.2.0"
   },
   "devDependencies": {

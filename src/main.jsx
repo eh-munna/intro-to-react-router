@@ -1,13 +1,12 @@
 import React, { Children } from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import './index.css';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import Header from './components/Header/Header';
-import Root from './components/Root/Root';
+import Home from './components/Home/Home';
+import Friends from './components/Friends/Friends';
 
 // const router = createBrowserRouter([
 //   {
@@ -27,7 +26,7 @@ import Root from './components/Root/Root';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <Home></Home>,
     children: [
       {
         path: '/contact',
@@ -36,6 +35,11 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About />,
+      },
+      {
+        path: '/friends',
+        element: <Friends></Friends>,
+        loader: () => fetch('https://jsonplaceholder.typicode.com/users'),
       },
     ],
   },

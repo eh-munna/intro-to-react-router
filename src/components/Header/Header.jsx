@@ -18,6 +18,9 @@ const Header = () => {
           <li className="border px-2 rounded-md border-lime-600">
             <Link to="/friends">Friends</Link>
           </li>
+          <li className="border px-2 rounded-md border-lime-600">
+            <Link to="/posts">Posts</Link>
+          </li>
         </ul>
       </nav>
     </div>
